@@ -1,0 +1,77 @@
+.nav_container {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 5px 30px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-icon div {
+    width: 40px;
+    height: 2px;
+    background-color: #000000;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.nav-links {
+  display: none;
+}
+
+.menu-icon.active + .nav-links {
+  display: block;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: -10px;
+    margin-left: 100px;
+}
+
+.logo img {
+    width: 30px;
+}
+
+.logo p {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.search-icon img {
+    width: 20px;
+    cursor: pointer;
+    margin-bottom: -5px;
+    margin-right: 15px;
+
+}
+
+.book-button {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-style: double;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.book-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
